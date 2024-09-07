@@ -1,0 +1,105 @@
+body {
+    font-family: "Happy Monkey", system-ui;
+    font-weight: bold;
+    background-color: #e0e0e0; 
+    color: #333;  
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1, h2 {
+    color: #4a90e2;  
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-top: 10px;
+}
+
+#info-text {
+    font-size: 16px;
+    color: #555; 
+    text-align: center;
+    margin-bottom: 20px;
+    max-width: 80%;
+    line-height: 1.5;
+}
+
+#input-text {
+    padding: 10px;
+    width: 250px;
+    max-width: 80%;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    font-family: inherit;
+    font-weight: inherit;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4a90e2;  
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #357ab7; 
+}
+
+button:disabled {
+    background-color: #aaa;  
+    cursor: not-allowed;
+}
+
+#list {
+    list-style-type: none;  
+    padding: 0;
+    margin: 20px 0;
+    width: 100%;
+    max-width: 400px;
+}
+
+#list li {
+    background-color: #fff;
+    padding: 10px 15px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);  
+}
+
+#random-choice {
+    font-size: 24px;
+    color: green;
+    margin: 20px 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    #input-text {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    button {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    #list {
+        max-width: 100%;
+    }
+}
